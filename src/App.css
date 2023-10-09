@@ -1,38 +1,172 @@
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #ecf2f8;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-grid {
+  display: grid;
+  gap: 1rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container1 {
+  grid-area: one;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: aquamarine;
+  height: 17rem;
+}
+
+.container2 {
+  grid-area: two;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 17rem;
+
+  background-color: rgb(102, 21, 91);
+}
+
+.container3 {
+  grid-area: three;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 15rem;
+
+
+  background-color: rgb(190, 153, 30);
+}
+
+.container4 {
+  grid-area: four;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 15rem;
+
+  background-color: rgb(190, 30, 30);
+}
+
+.container5 {
+  grid-area: five;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 15rem;
+
+  background-color: rgb(30, 190, 30);
+}
+
+.container6 {
+  grid-area: six;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 15rem;
+
+  background-color: rgb(30, 30, 190);
+}
+
+.container7 {
+  grid-area: seven;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 5rem;
+
+  background-color: rgb(190, 30, 190);
+}
+
+.container8 {
+  grid-area: eight;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 3rem;
+
+  background-color: rgb(30, 190, 190);
+}
+
+
+@media screen and (min-width: 36em) {
+  .main-grid {
+    grid-template-areas:
+      "two two two two"
+      "one one three three"
+      "four four five five"
+      "six six six six"
+      "seven seven seven seven"
+      "eight eight eight eight";
   }
-  to {
-    transform: rotate(360deg);
+  .container1{
+    height: 15rem;
+  }
+
+}
+
+
+
+@media (max-width: 34em) and (min-width: 38em) {
+  .main-grid {
+    grid-template-areas:
+      "two two two two"
+      "one one three three"
+      "four four five five"
+      "six six six six"
+      "seven seven seven seven"
+      "eight eight eight eight";
+  }
+  .container1{
+    height: 15rem;
+  }
+
+}
+
+@media (max-width: 39em) and (min-width: 55em) {
+  .main-grid {
+    grid-template-areas:
+      "two two two two"
+      "one one three three"
+      "four four five five"
+      "six six six six"
+      "seven seven seven seven"
+      "eight eight eight eight";
+  }
+
+  .container1{
+    height: 17rem;
+  }
+
+
+}
+
+@media screen and (min-width: 75em) {
+  .main-grid {
+    grid-template-areas:
+      "one two two two"
+      "three four five six"
+      "seven seven seven seven"
+      "eight eight eight eight";
+  }
+
+  .container1{
+    height: 17rem;
   }
 }

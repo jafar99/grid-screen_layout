@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main-grid">
+        <div className="container1">
+          <span className="title">
+            container1</span>
+            <span className="title">
+            container1</span>
+            <span className="title">
+            container1</span>
+            <span className="title">
+            container1</span>
+            <span className="title">
+            container1</span>
+            <span className="title">
+            container1</span>
+        </div>
+
+        <div className="container2">
+          <span className="title">container2</span>
+        </div>
+
+        <div className="container3">
+          <span className="title">container3</span>
+        </div>
+
+        <div className="container4">
+          <span className="title">container4</span>
+        </div>
+
+        <div className="container5">
+          <span className="title">container5</span>
+        </div>
+
+        <div className="container6">
+          <span className="title">container6</span>
+        </div>
+
+        <div className="container7">
+          <span className="title">container7</span>
+        </div>
+
+        <div className="container8">
+          <span className="title">container8</span>
+        </div>
+      </div>
     </div>
   );
 }
