@@ -34,7 +34,6 @@ body {
   border-radius: 10px;
   padding: 2rem;
   background-color: aquamarine;
-  height: 17rem;
   display: flex;
   flex-direction: column;
 }
@@ -44,7 +43,6 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 2rem;
-  height: 17rem;
 
   background-color: rgb(102, 21, 91);
 }
@@ -54,7 +52,6 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 2rem;
-  height: 15rem;
 
   background-color: rgb(190, 153, 30);
 }
@@ -64,8 +61,8 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 2rem;
-  height: 15rem;
-
+  display: flex;
+  flex-direction: column;
   background-color: rgb(190, 30, 30);
 }
 
@@ -74,7 +71,6 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 2rem;
-  height: 15rem;
 
   background-color: rgb(30, 190, 30);
 }
@@ -84,7 +80,6 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 2rem;
-  height: 15rem;
 
   background-color: rgb(30, 30, 190);
 }
@@ -94,7 +89,6 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 2rem;
-  height: 5rem;
 
   background-color: rgb(190, 30, 190);
 }
@@ -104,7 +98,6 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 2rem;
-  height: 3rem;
 
   background-color: rgb(30, 190, 190);
 }
@@ -119,10 +112,7 @@ body {
       "seven seven seven seven"
       "eight eight eight eight";
   }
-  .container1 {
-    height: 15rem;
-  }
-}
+  
 
 @media (max-width: 20em) and (min-width: 33em) {
   .main-grid {
@@ -136,9 +126,7 @@ body {
 
     width: 90%;
   }
-  .container1 {
-    height: 15rem;
-  }
+
 
 }
 
@@ -153,9 +141,7 @@ body {
       "seven seven seven seven"
       "eight eight eight eight";
   }
-  .container1 {
-    height: 15rem;
-  }
+ 
 }
 
 @media (max-width: 39em) and (min-width: 55em) {
@@ -169,9 +155,7 @@ body {
       "eight eight eight eight";
   }
 
-  .container1 {
-    height: 17rem;
-  }
+ 
 }
 
 @media screen and (min-width: 75em) {
@@ -183,7 +167,7 @@ body {
       "eight eight eight eight";
   }
 
-  .container1 {
-    height: 17rem;
-  }
+
+}
+
 }
